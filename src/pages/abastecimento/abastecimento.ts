@@ -13,7 +13,7 @@ export class AbastecimentoPage {
   pagamento;
   data;
   tipo;
-  posto;
+  posto: string;
 
     
   // abastecimento(){

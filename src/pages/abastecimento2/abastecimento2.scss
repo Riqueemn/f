@@ -1,5 +1,17 @@
 page-abastecimento2 {
     ion-content{
         height: 70%;
+        animation-duration: 0.5s;
+        animation-name: passagem;
+        background: red;
+        margin-left: 0%;
+        opacity: 1;      
     }
+
+    @keyframes passagem {
+        from{margin-left:80%;opacity: 0;}
+        to{margin-left:0%;opacity: 1;}
+        
+    }
+
 }

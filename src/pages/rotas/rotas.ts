@@ -1,12 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the RotasPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { AbastecimentoPage } from '../abastecimento/abastecimento';
 
 @IonicPage()
 @Component({
@@ -19,14 +13,18 @@ export class RotasPage {
   abastecimento2:boolean = false;
   abastecimento3:boolean = false;
   abastecimento4:boolean = false;
+
+  posto: string;
   
   
   
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+
+    // this.posto = informacoes.posto;
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad RotasPage');
+  finalizar(){
+    this.navCtrl.pop();
   }
 
 }
